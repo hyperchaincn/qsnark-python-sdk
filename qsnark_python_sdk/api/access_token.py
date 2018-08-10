@@ -16,14 +16,12 @@ class AccessToken(Request):
         )
 
         if ('access_token' not in result):
-            err = 'in refresh_access_token function, [access_token] not exists in result'
-            raise KeyError(err)
+            raise KeyError(str(result))
         else:
             self._access_token = result['access_token']
 
         if ('refresh_token' not in result):
-            err = 'in refresh_access_token function, [refresh_token] not exists in result'
-            raise KeyError(err)
+            raise KeyError(str(result))
         else:
             self._refresh_token = result['refresh_token']
 
