@@ -7,7 +7,7 @@ LONG_DESCRIPTION = 'Document see https://github.com/hyperchaincn/qsnark-python-s
 
 setup(
     name='qsnark-python-sdk',
-    version='1.0.0',
+    version='1.0.1',
     keywords='Qsnark, SDK',
     description='Qsnark SDK for Python',
     long_description=LONG_DESCRIPTION,
